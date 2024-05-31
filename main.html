@@ -8,7 +8,20 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+	<ul id="articles">
+		
+	</ul>
+	
+	
+<script type="text/javascript" src="./script.js">
+	const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
+	const container = document.getElementById("articles");
+	const li = document.createElement("li");
+	bands.forEach((item) => {
+		li.innerHtml = item;
+		container.appendChild = li;
+	})
+	
 </script>
 
 </body>
