@@ -21,10 +21,10 @@
             return bandName.replace(/^(a |an |the )/i, '').trim();
         }
 
-        const sortedBands = bands.sort((a, b) => strip(a).localeCompare(strip(b)));
+        bands = bands.sort((a, b) => strip(a).localeCompare(strip(b)));
 
         const ul = document.getElementById('articles');
-        sortedBands.forEach(band => {
+        bands.forEach(band => {
             const li = document.createElement('li');
             li.textContent = band;
             ul.appendChild(li);
